@@ -2,9 +2,9 @@
 ![Build Status](https://img.shields.io/badge/ML-yes-green)
 ![Build Status](https://img.shields.io/badge/DL-yes-blue)
 ![Contributions](https://img.shields.io/badge/contributions-welcome-gold)
-![GitHub issues](https://img.shields.io/github/issues/DennisWayo/hydrogen-mapping-atyrau Public)
-![GitHub forks](https://img.shields.io/github/forks/DennisWayo/hydrogen-mapping-atyrau Public)
-![GitHub stars](https://img.shields.io/github/stars/DennisWayo/hydrogen-mapping-atyrau Public)
+![GitHub issues](https://img.shields.io/github/issues/DennisWayo/hydrogen-mapping-atyrau)
+![GitHub forks](https://img.shields.io/github/forks/DennisWayo/hydrogen-mapping-atyrau)
+![GitHub stars](https://img.shields.io/github/stars/DennisWayo/hydrogen-mapping-atyrau)
 
 # Hydrogen-Rich Reservoir Mapping using Machine Learning and Deep Learning
 
@@ -50,4 +50,4 @@ Author Name, Title, GIScience & Remote Sensing (Submitted 2025), DOI: [to be add
 
 - Google Colab for computational resources.
 
- -PyTorch, Scikit-learn, Rasterio libraries.
+- PyTorch, Scikit-learn, Rasterio libraries.
