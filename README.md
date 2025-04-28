@@ -34,16 +34,19 @@ The project combines ensemble machine learning models and a customized U-Net con
 
 - Sample Data: Minimal dummy samples provided for reproducibility.
 
-## Dataset Access
+## 📦 Dataset Access
 
-Due to size limitations, the full training dataset (hydrogen prediction geospatial files for Atyrau) is hosted externally.
+Due to file size limitations on GitHub, the complete geospatial training dataset for hydrogen-rich region prediction in Atyrau is hosted externally.
 
-📥 ![Download Dataset (Google Drive Link)]([https://your-link-here](https://drive.google.com/file/d/1IbGIL9xZsFaANWRBj2-LCep6x_saU4Gn/view?usp=drive_link])
+🔗 [Download Dataset from Google Drive](https://drive.google.com/file/d/1IbGIL9xZsFaANWRBj2-LCep6x_saU4Gn/view?usp=drive_link)
+
 The dataset includes:
-- Sentinel-2 raster patches (NDVI, SWIR1)
-- Synthetic geochemical features
-- Ground truth labels for ML and DL training
+- Sentinel-2 raster bands (NDVI, SWIR1) preprocessed at 10m resolution
+- Synthetic geochemical feature layers (soil moisture, temperature, depth)
+- Machine learning ground truth labels (binary H₂ high/low classes)
+- Full metadata and spatial reference files (CRS, GeoTIFF format)
 
+Please cite this repository if you use the dataset for research purposes.
 
 ## Citation
 
