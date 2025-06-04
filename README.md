@@ -52,7 +52,7 @@ Please cite this repository if you use the dataset for research purposes.
 
 If you use this dataset or the Python script, please cite:
 
-```bash
+```python
 @misc{wayo2025xaigis,
   author       = {Wayo, Dennis Delali Kwesi},
   title        = {XaiGis: Explainable Geospatial AI Pipeline for Natural Hydrogen Mapping in Atyrau},
