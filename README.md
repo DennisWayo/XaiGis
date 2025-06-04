@@ -50,10 +50,17 @@ Please cite this repository if you use the dataset for research purposes.
 
 ## Citation
 
-If you use this work, please cite:
+If you use this dataset or the Python script, please cite:
 
-```Python
-Author Name, Title, GIScience & Remote Sensing (Submitted 2025), DOI: [to be added]
+```bash
+@misc{wayo2025xaigis,
+  author       = {Wayo, Dennis Delali Kwesi},
+  title        = {XaiGis: Explainable Geospatial AI Pipeline for Natural Hydrogen Mapping in Atyrau},
+  year         = 2025,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.15592017},
+  url          = {https://doi.org/10.5281/zenodo.15592017}
+}
 ```
 
 ## Acknowledgements
