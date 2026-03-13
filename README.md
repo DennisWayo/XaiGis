@@ -48,6 +48,8 @@ xaigis report --config configs/default.json
 
 If this codebase supports your work, please also cite the upstream scientific study:
 
+![Related Work Citation Figure](docs/images/related-work-citation.png)
+
 ```bibtex
 @Article{Wayo2026,
   author  = {Wayo, Dennis Delali Kwesi and Goliatt, Leonardo and Hazlett, Randy and Fustic, Milovan and Leila, Mahmoud},
