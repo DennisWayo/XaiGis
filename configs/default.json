@@ -1,0 +1,84 @@
+{
+  "paths": {
+    "safe_zip": "../S2B_MSIL2A_20250201T074039_N0511_R092_T39TWN_20250201T085045.SAFE.zip",
+    "safe_dir": "../outputs/SAFE/S2B_MSIL2A_20250201T074039_N0511_R092_T39TWN_20250201T085045.SAFE",
+    "work_dir": "../outputs",
+    "artifacts_dir": "../artifacts",
+    "geology_geojson": "../geology/atyrau_targets.geojson",
+    "feature_stack_tif": "../outputs/S2_feature_stack_10m.tif",
+    "feature_names_json": "../outputs/feature_names.json",
+    "label_tif": "../outputs/h2_label_poly_10m.tif",
+    "dataset_npz": "../artifacts/Xy_dataset.npz",
+    "dataset_csv": "../artifacts/Xy_dataset.csv",
+    "models_dir": "../artifacts/models",
+    "predictions_dir": "../artifacts/predictions",
+    "metrics_json": "../artifacts/metrics.json",
+    "importance_csv": "../artifacts/feature_importance.csv",
+    "report_md": "../artifacts/report.md"
+  },
+  "features": {
+    "band_order": [
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06",
+      "B07",
+      "B08",
+      "B8A",
+      "B09",
+      "B10",
+      "B11",
+      "B12"
+    ],
+    "indices": [
+      "NDVI",
+      "NDWI",
+      "NDSI",
+      "NBR",
+      "BSI"
+    ],
+    "texture_source": "NDVI",
+    "texture_window": 7,
+    "eps": 1e-06
+  },
+  "dataset": {
+    "tile_size": 256,
+    "max_per_tile": 3000,
+    "random_seed": 42
+  },
+  "training": {
+    "test_size": 0.2,
+    "random_seed": 42,
+    "threshold": 0.8,
+    "models": {
+      "sgd": true,
+      "rf": true,
+      "xgb": true,
+      "lgbm": true
+    },
+    "sgd": {
+      "loss": "log_loss"
+    },
+    "rf": {
+      "n_estimators": 200,
+      "max_depth": null,
+      "n_jobs": -1
+    },
+    "xgb": {
+      "n_estimators": 100,
+      "max_depth": 5
+    },
+    "lgbm": {
+      "learning_rate": 0.1
+    }
+  },
+  "prediction": {
+    "tile_size": 512
+  },
+  "explain": {
+    "sample_size": 3000,
+    "use_shap_if_available": true
+  }
+}

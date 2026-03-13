@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.venv/
+.pytest_cache/
+.mypy_cache/
+
+# Local env/config
+.env
+.env.*
+
+# Generated pipeline outputs
+artifacts/
+outputs/
+artifacts_smoke/
+outputs_smoke/
+
+# Large local inputs
+data/
+*.SAFE.zip
+
+# Local docs/notes
+proposal.docx
+speaker.txt

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xaigis"
+version = "0.1.0"
+description = "Config-driven geospatial ML pipeline for natural hydrogen prospectivity mapping"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "rasterio>=1.3",
+  "geopandas>=0.14",
+  "scipy>=1.10",
+  "scikit-learn>=1.3",
+  "joblib>=1.3",
+  "xgboost>=2.0",
+  "lightgbm>=4.0",
+]
+
+[project.optional-dependencies]
+explain = [
+  "shap>=0.45",
+]
+
+[project.scripts]
+xaigis = "xaigis.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
