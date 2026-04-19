@@ -44,14 +44,16 @@ XaiGis runs as a Python CLI backend (file-based geospatial/ML pipeline). The bac
 
 Dependency constraints are defined in `pyproject.toml`.
 
-## Quick Start
+## Quick Start (PyPI)
 
 ```bash
-cd /path/to/XaiGis
+mkdir -p xaigis-run && cd xaigis-run
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -e .
+python -m pip install --upgrade pip
+python -m pip install xaigis
 xaigis init-config --out configs/default.json
+# edit configs/default.json with your local input/output paths
 xaigis prepare --config configs/default.json
 xaigis rasterize-labels --config configs/default.json
 xaigis sample-dataset --config configs/default.json
@@ -61,10 +63,14 @@ xaigis explain --config configs/default.json
 xaigis report --config configs/default.json
 ```
 
-Install from PyPI (after release):
+## Development Install (from source)
 
 ```bash
-pip install xaigis
+cd /path/to/XaiGis
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -e .
 ```
 
 ## Notes
