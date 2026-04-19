@@ -25,6 +25,12 @@ Production-oriented implementation of the XaiGis workflow includes:
 - Explainability outputs (model importances with SHAP fallback)
 - Metrics and markdown reporting
 
+## Visual Snapshot
+
+![Scene-level prospectivity snapshot](docs/images/readme/scene_t42txn_prospectivity.jpg)
+
+*Illustrative scene-level output (RGB context with classical and quantum prospectivity panels).*
+
 ## Backend Software Stack
 
 XaiGis runs as a Python CLI backend (file-based geospatial/ML pipeline). The backend stack includes:
