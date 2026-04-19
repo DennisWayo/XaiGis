@@ -32,7 +32,9 @@ proposal.docx
 speaker.txt
 
 # Paper-writing and local research artifacts (not part of core package repo)
-paper_runs/
+paper_runs/**
+!paper_runs/
+!paper_runs/README.md
 figures/
 *.tex
 *.gp
