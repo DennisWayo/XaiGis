@@ -30,3 +30,12 @@ data/
 # Local docs/notes
 proposal.docx
 speaker.txt
+
+# Paper-writing and local research artifacts (not part of core package repo)
+paper_runs/
+figures/
+*.tex
+*.gp
+*.gnuplot
+*.docx
+*.pdf
