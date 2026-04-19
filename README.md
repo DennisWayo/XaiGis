@@ -53,11 +53,17 @@ xaigis explain --config configs/default.json
 xaigis report --config configs/default.json
 ```
 
+Install from PyPI (after release):
+
+```bash
+pip install xaigis
+```
+
 ## Notes
 
 - Update `configs/default.json` paths as needed for your local inputs.
 - The pipeline is designed for large rasters and uses tile/window processing where relevant.
-- XGBoost/LightGBM are optional at runtime; if unavailable, those models are skipped with a warning.
+- `pip install xaigis` installs the full dependency set (classical ML, SHAP, and QML packages).
 
 ## Related Work Citation
 
